@@ -1,0 +1,136 @@
+/* General Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #FF7E5F, #FEB47B);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Main container */
+
+.container {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Title Styling */
+
+.title {
+    font-size: 3.5rem;
+    animation: fadeInUp 2s ease-in-out;
+    letter-spacing: 2px;
+}
+
+
+/* Greeting Message */
+
+.greeting {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeInUp 3s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
+/* Gallery Section */
+
+.gallery {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: fadeInUp 4s ease-in-out;
+    animation-delay: 1s;
+}
+
+.image {
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: scaleIn 1s forwards;
+}
+
+.image:nth-child(1) {
+    animation-delay: 1.5s;
+}
+
+.image:nth-child(2) {
+    animation-delay: 2s;
+}
+
+
+/* Button Styling */
+
+.celebrate-button {
+    margin-top: 30px;
+    background-color: #ff4e50;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.celebrate-button:hover {
+    transform: scale(1.1);
+}
+
+
+/* Footer Text */
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+
+/* Animations */
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
